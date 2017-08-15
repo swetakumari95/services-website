@@ -36,7 +36,7 @@
                 <a tabindex="-1" href="#">{{ item }}</a>
                 <ul class="dropdown-menu">
                   {% for subitem in item.services_set.all %}
-                  <li><a tabindex="-1" href="#">{{ subitem }}</a></li>
+                  <li><a tabindex="-1" href="{% url 'service:detail' subitem.id %}">{{ subitem }}</a></li>
                   {% endfor %}
                 </ul>
               </li>

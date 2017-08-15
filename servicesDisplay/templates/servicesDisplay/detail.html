@@ -1,0 +1,30 @@
+{% extends 'servicesDisplay/base.html' %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-sm-2">
+        <h4>TITLE</h4><hr/>
+        <p>{{ service.service_type }}</p><hr/>
+      </div>
+      <div class="col-md-2 col-sm-2">
+        <h4>SUBTITLE</h4><hr/>
+        <p>{{ service.service_title }}</p><hr/>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <h4>DESCRIPTION</h4><hr/>
+        <p>{{ service.service_content }}</p><hr/>
+      </div>
+      <div class="col-md-2 col-sm-2">
+        <h4>CREATION</h4><hr/>
+        <p>{{ service.created_by }}</p>
+        <p>{{ service.created_date }}</p><hr/>
+      </div>
+      <div class="col-md-2 col-sm-2">
+        <h4>MODIFICATION</h4><hr/>
+        <p>{{ service.modified_by }}</p>
+        <p>{{ service.modified_date }}</p><hr/>
+      </div>
+    </div>
+  </div>
+{% endblock %}
